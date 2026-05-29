@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocean of Wool | Crochet Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo"><span>🧶</span> Ocean of Wool</a>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#patterns">Patterns</a><a href="#about">About</a><a href="#contact">Contact</a><a href="admin.html" class="admin-link">Admin</a>
+    </nav>
+    <div class="header-actions">
+      <input id="searchInput" type="search" placeholder="Search yarns, kits..." />
+      <button id="cartBtn" class="icon-btn">🛒 <span id="cartCount">0</span></button>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="pill">♥ Handmade with Love</p>
+        <h1>One more Hobby<br />or talent</h1>
+        <h2>Let's create something beautiful</h2>
+        <p>Premium quality yarns, crochet kits, tools and creative inspiration for every maker.</p>
+        <div class="buttons"><a class="btn primary" href="#shop">Shop Now</a><a class="btn secondary" href="#patterns">Explore Patterns</a></div>
+      </div>
+      <div class="hero-art">
+        <div class="basket">🧺</div><div class="ball b1">🧶</div><div class="ball b2">🧶</div><div class="ball b3">🧶</div><div class="badge">Handmade<br>with Love</div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><b>Premium Quality</b><span>Soft durable yarns</span></div><div><b>Handmade with Love</b><span>Carefully selected</span></div><div><b>Fast Shipping</b><span>Quick delivery</span></div><div><b>Secure Payment</b><span>Safe checkout</span></div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-head"><h2>Shop by Category</h2><a href="#shop">View All →</a></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="section products-wrap">
+      <div class="section-head"><h2>Popular Products</h2><select id="categoryFilter"><option value="all">All Categories</option></select></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-card"><h2>Ocean<br>of<br>Wool</h2><p>Crafted with Love, Stitch by Stitch</p></div>
+      <div><p class="eyebrow">ABOUT US</p><h2>Made Just for You</h2><p>Our collection is curated to inspire creativity and bring your handmade ideas to life.</p><ul><li>Curated premium yarns</li><li>Beginner friendly kits</li><li>Free patterns and tips</li></ul></div>
+      <div class="stats"><b>5000+</b><span>Happy Customers</span><b>1000+</b><span>Products</span><b>4.9★</b><span>Average Rating</span></div>
+    </section>
+
+    <section id="patterns" class="why">
+      <h2>Why Makers Love Ocean of Wool</h2>
+      <div class="why-grid"><div>👥<b>Community</b><p>Share, learn & grow.</p></div><div>📖<b>Free Patterns</b><p>Easy project guides.</p></div><div>💡<b>Tutorials</b><p>Step-by-step tips.</p></div><div>🎨<b>Creative Ideas</b><p>Fresh inspiration.</p></div></div>
+    </section>
+
+    <section id="contact" class="newsletter"><div><b>Stay Inspired!</b><p>Get tips, free patterns and offers.</p></div><form id="newsletterForm"><input type="email" placeholder="Enter your email" required><button>Subscribe</button></form></section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer"><div class="cart-head"><h3>Your Cart</h3><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total"><b>Total:</b><b id="cartTotal">₹0</b></div><button class="btn primary full">Checkout</button></aside>
+  <div id="toast"></div>
+
+  <footer class="footer"><div><a class="logo"><span>🧶</span> Ocean of Wool</a><p>Handmade with love for makers around the world.</p></div><div><b>Quick Links</b><a>Home</a><a>Shop</a><a>Patterns</a></div><div><b>Customer Service</b><a>Contact</a><a>Shipping Policy</a><a>Return Policy</a></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ocean of Wool Admin</title><link rel="stylesheet" href="style.css"></head>
+<body class="admin-body">
+  <div id="loginPage" class="login-box"><h1>🧶 Admin Login</h1><p>Ocean of Wool Dashboard</p><input id="adminUser" placeholder="Username" value="admin"><input id="adminPass" type="password" placeholder="Password" value="1234"><button id="loginBtn" class="btn primary full">Login</button><small>Demo: admin / 1234</small></div>
+  <div id="dashboard" class="dashboard hidden">
+    <aside class="sidebar"><h2>🧶 Ocean Admin</h2><button data-tab="overview" class="active">Overview</button><button data-tab="products">Products</button><button data-tab="orders">Orders</button><button data-tab="messages">Messages</button><button id="logoutBtn">Logout</button><a href="index.html">View Website</a></aside>
+    <main class="dash-main">
+      <section id="overview" class="tab active"><h1>Dashboard</h1><div class="dash-cards"><div><b id="totalProducts">0</b><span>Products</span></div><div><b id="totalOrders">0</b><span>Orders</span></div><div><b>₹24,500</b><span>Revenue</span></div><div><b>4.9★</b><span>Rating</span></div></div></section>
+      <section id="products" class="tab"><h1>Manage Products</h1><form id="productForm" class="admin-form"><input id="pName" placeholder="Product name" required><input id="pCategory" placeholder="Category" required><input id="pPrice" type="number" placeholder="Price" required><input id="pImage" placeholder="Emoji/Image text e.g. 🧶" value="🧶"><textarea id="pDesc" placeholder="Description"></textarea><button class="btn primary">Save Product</button></form><div id="adminProducts" class="admin-list"></div></section>
+      <section id="orders" class="tab"><h1>Orders</h1><div class="admin-list" id="ordersList"></div></section>
+      <section id="messages" class="tab"><h1>Messages</h1><div class="admin-list"><div class="list-row"><b>Riya Patel</b><span>Need pink yarn bundle for baby blanket.</span></div><div class="list-row"><b>Meera</b><span>Do you provide custom crochet flowers?</span></div></div></section>
+    </main>
+  </div>
+  <script src="admin.js"></script>
+</body></html>
